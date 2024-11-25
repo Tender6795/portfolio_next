@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { AboutMe } from "./сomponents/AboutMe";
 
 export default function Home() {
   return (
     <div>
-      <h1>test</h1>
+      <AboutMe/>
     </div>
   );
 }
