@@ -9,6 +9,12 @@ export const Avatar = () => {
         className="absolute top-0 left-0 w-full h-full object-cover"
         style={{ maskImage: 'url("/Rectangle.svg")', maskSize: 'cover', maskPosition: 'center' }}
       />
+      <img
+        src="/paginator.svg"
+        alt="Paginator"
+        className="absolute"
+        style={{ top: "417px", right: "213px" }}
+      />
     </div>
   );
 };
