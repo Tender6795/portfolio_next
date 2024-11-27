@@ -4,16 +4,18 @@ import { Avatar } from "./Avatar";
 import { Button } from "../ui/Button";
 
 export const AboutMe = () => {
-
   const getTouchHandle = () => {
-    window.open("https://www.upwork.com/freelancers/~010a21f1a8bbd4727d", "_blank"); 
+    window.open(
+      "https://www.upwork.com/freelancers/~010a21f1a8bbd4727d",
+      "_blank"
+    );
   };
 
   const downloadHanlde = () => {
     const link = document.createElement("a");
-    link.href = "/CV.pdf"; 
-    link.download = "CV.pdf";  
-    link.click(); 
+    link.href = "/CV.pdf";
+    link.download = "CV.pdf";
+    link.click();
   };
 
   return (
@@ -33,8 +35,17 @@ export const AboutMe = () => {
             neque condimentum volutpat non a tortor. Quisque nec lorem
             dignissim, finibus eros id.
           </span>
+          <br />
+          <span className="font-normal text-[14px] leading-[17px]">
+            I'm a web developer with solid experience in Full-Stack development
+            🚀 I can provide you the best suitable solutions for your
+            requirements. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Morbi gravida nibh in luctus dictum. Quisque vitae lectus non
+            neque condimentum volutpat non a tortor. Quisque nec lorem
+            dignissim, finibus eros id.
+          </span>
         </div>
-        <div className="flex gap-[20px] mt-[60px]"> 
+        <div className="flex gap-[20px] mt-[60px]">
           <Button text="Get in touch" onClick={getTouchHandle} />
           <Button
             text="Download CV"
