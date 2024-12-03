@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { CustomerReview } from "./CustomerReview";
+import  CustomerReview from "./CustomerReview";
 
 export const ProjectInfo = () => {
   return (
