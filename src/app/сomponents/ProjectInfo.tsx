@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion"; 
 import CustomerReview from "./CustomerReview";
 import { data } from "../data";
 
@@ -13,7 +14,13 @@ export const ProjectInfo = () => {
 
   return (
     <div className="relative">
-      <div className="h-[460px] w-[905px] flex bg-transparent rounded-[20px] items-center">
+      <motion.div
+        className="h-[460px] w-[905px] flex bg-transparent rounded-[20px] items-center"
+        key={currentIndex}
+        initial={{ opacity: 0, x: 50 }} 
+        animate={{ opacity: 1, x: 0 }} 
+        transition={{ duration: 0.7 }} 
+      >
         <div className="h-[417px] w-[588px] rounded-[20px] border-[3px] border-[#03A473] bg-[#03A4734D] flex items-center justify-center overflow-hidden">
           <Image
             src={data[currentIndex].srcImage}
@@ -25,7 +32,6 @@ export const ProjectInfo = () => {
         </div>
 
         <div className="h-[367px] w-[277px] flex flex-col justify-between ml-auto">
-          {/* Первый компонент */}
           <div className="h-[185px] w-[277px] flex flex-col justify-center items-start">
             <h2 className="font-montserrat font-bold text-[16px] leading-[19.5px] mb-2">
               {data[currentIndex].title}
@@ -35,20 +41,22 @@ export const ProjectInfo = () => {
             </p>
           </div>
 
-          {/* Второй компонент */}
           <CustomerReview {...data[currentIndex].review} />
         </div>
-      </div>
+      </motion.div>
 
-      {/* Дотсы */}
       <div className="mt-4 flex gap-[18px]">
         {data.map((_, index) => (
-          <div
+          <motion.div
             key={index}
             onClick={() => handleDotClick(index)}
-            className={`w-[10.7px] h-[10.7px] rounded-full cursor-pointer ${
-              currentIndex === index ? "bg-[#03A473]" : "bg-[#FFFFFF]"
-            }`}
+            className={`w-[10.7px] h-[10.7px] rounded-full cursor-pointer`}
+            initial={{ scale: 1 }}
+            animate={{
+              scale: currentIndex === index ? 1.3 : 1, 
+              backgroundColor: currentIndex === index ? "#03A473" : "#FFFFFF",
+            }}
+            transition={{ duration: 0.3 }} 
           />
         ))}
       </div>
