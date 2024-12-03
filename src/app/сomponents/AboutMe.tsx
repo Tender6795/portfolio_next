@@ -28,21 +28,21 @@ export const AboutMe = () => {
         </h1>
         <div className="w-[600px] h-[271px]">
           <span className="font-normal text-[14px] leading-[17px]">
-            I'm a web developer with solid experience in Full-Stack development
-            🚀 I can provide you the best suitable solutions for your
-            requirements. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Morbi gravida nibh in luctus dictum. Quisque vitae lectus non
-            neque condimentum volutpat non a tortor. Quisque nec lorem
-            dignissim, finibus eros id.
+            I&apos;m a web developer with solid experience in Full-Stack
+            development 🚀 I can provide you the best suitable solutions for
+            your requirements. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Morbi gravida nibh in luctus dictum. Quisque vitae
+            lectus non neque condimentum volutpat non a tortor. Quisque nec
+            lorem dignissim, finibus eros id.
           </span>
           <br />
           <span className="font-normal text-[14px] leading-[17px]">
-            I'm a web developer with solid experience in Full-Stack development
-            🚀 I can provide you the best suitable solutions for your
-            requirements. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Morbi gravida nibh in luctus dictum. Quisque vitae lectus non
-            neque condimentum volutpat non a tortor. Quisque nec lorem
-            dignissim, finibus eros id.
+            I&apos;m a web developer with solid experience in Full-Stack
+            development 🚀 I can provide you the best suitable solutions for
+            your requirements. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Morbi gravida nibh in luctus dictum. Quisque vitae
+            lectus non neque condimentum volutpat non a tortor. Quisque nec
+            lorem dignissim, finibus eros id.
           </span>
         </div>
         <div className="flex gap-[20px] mt-[60px]">
