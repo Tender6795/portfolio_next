@@ -1,7 +1,7 @@
 import React from "react";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
-type CustomerReviewProps = {
+export type CustomerReviewProps = {
   rating?: number;
   comment?: string;
   author?: string;

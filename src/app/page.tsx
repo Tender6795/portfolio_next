@@ -5,8 +5,8 @@ import { Works } from "./сomponents/Works";
 export default function Home() {
   return (
     <div>
-      <AboutMe />
-      <Skills />
+      {/* <AboutMe /> */}
+      {/* <Skills /> */}
       <Works />
     </div>
   );

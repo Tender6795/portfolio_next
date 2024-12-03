@@ -4,6 +4,7 @@ import { ProjectInfo } from "./ProjectInfo";
 import Image from "next/image";
 
 export const Works = () => {
+  
   return (
     <div className="w-full flex justify-end items-center mt-[74px]">
       <div className="w-[1230px] flex flex-col items-start relative">
