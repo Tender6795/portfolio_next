@@ -26,32 +26,26 @@ export const AboutMe = () => {
           <br />
           {`a Full-Stack Developer`}
         </h1>
-        <div className="w-[600px] h-[271px]">
-          <span className="font-normal text-[14px] leading-[17px]">
+        <div className="w-[600px]">
+          <span className="font-normal text-[14px] leading-[17px] block">
             I&apos;m a web developer with solid experience in Full-Stack
             development 🚀 I can provide you the best suitable solutions for
             your requirements. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Morbi gravida nibh in luctus dictum. Quisque vitae
-            lectus non neque condimentum volutpat non a tortor. Quisque nec
-            lorem dignissim, finibus eros id.
+            adipiscing elit. 
           </span>
-          <br />
-          <span className="font-normal text-[14px] leading-[17px]">
-            I&apos;m a web developer with solid experience in Full-Stack
-            development 🚀 I can provide you the best suitable solutions for
-            your requirements. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Morbi gravida nibh in luctus dictum. Quisque vitae
-            lectus non neque condimentum volutpat non a tortor. Quisque nec
-            lorem dignissim, finibus eros id.
+          <span className="font-normal text-[14px] leading-[17px] mt-[30px] block">
+            Morbi gravida nibh in luctus dictum. Quisque vitae lectus non neque
+            condimentum volutpat non a tortor. Quisque nec lorem dignissim,
+            finibus eros id.
           </span>
-        </div>
-        <div className="flex gap-[20px] mt-[60px]">
-          <Button text="Get in touch" onClick={getTouchHandle} />
-          <Button
-            text="Download CV"
-            onClick={downloadHanlde}
-            className="bg-[#363636]"
-          />
+          <div className="flex gap-[20px] mt-[60px]">
+            <Button text="Get in touch" onClick={getTouchHandle} />
+            <Button
+              text="Download CV"
+              onClick={downloadHanlde}
+              className="bg-[#363636]"
+            />
+          </div>
         </div>
       </div>
       <Avatar />
