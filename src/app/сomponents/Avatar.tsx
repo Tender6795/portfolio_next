@@ -5,7 +5,7 @@ export const Avatar = () => {
   return (
     <div className="relative w-[616px] h-[734px] overflow-hidden">
       <Image
-        src="/avatar.jpeg"
+        src="/avatar.png"
         alt="Background"
         layout="fill"  
         objectFit="cover"  

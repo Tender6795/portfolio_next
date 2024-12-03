@@ -7,7 +7,7 @@ export const ProjectInfo = () => {
     <div className="h-[460px] w-[905px] flex bg-transparent rounded-[20px] items-center">
       <div className="h-[417px] w-[588px] rounded-[20px] border-[3px] border-[#03A473] bg-[#03A4734D] flex items-center justify-center overflow-hidden">
         <Image 
-          src="/avatar.jpeg" 
+          src="/avatar.png" 
           alt="project"
           width={545}
           height={375}
