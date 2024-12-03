@@ -20,7 +20,7 @@ export const ProjectInfo = () => {
             alt="project"
             height={375}
             width={545}
-            className="rounded-[20px]"
+            className="rounded-[20px] object-cover w-[545px] h-[375px]"
           />
         </div>
 
@@ -41,7 +41,7 @@ export const ProjectInfo = () => {
       </div>
 
       {/* Дотсы */}
-      <div className="absolute bottom-0 left-0 mb-8 ml-[30px] flex gap-[18px]">
+      <div className="mt-4 flex gap-[18px]">
         {data.map((_, index) => (
           <div
             key={index}
