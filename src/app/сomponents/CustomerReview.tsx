@@ -9,8 +9,8 @@ type CustomerReviewProps = {
 
 const CustomerReview = ({
   rating = 5,
-  comment = "Это пример комментария. Он может быть длинным, но будет обрезан.",
-  author = "Иван Иванов",
+  comment = "This is a sample comment. It might be long but will be truncated. This is a sample comment. It might be long but will be truncated.This is a sample comment. It might be long but will be truncated. This is a sample comment. It might be long but will be truncated.",
+  author = "John Doe",
 }: CustomerReviewProps) => {
   const renderStars = (rating: number) => {
     const stars = [];
@@ -26,23 +26,17 @@ const CustomerReview = ({
     return stars;
   };
 
-  const shortComment =
-    comment.length > 80 ? `${comment.substring(0, 80)}...` : comment;
-
   return (
-    <div className="h-[200px] w-[277px] bg-[#FFF9F94D] rounded-[20px] p-4">
-      <div className="flex items-center gap-1">{renderStars(rating)}</div>
-      <div
-        className="text-sm mt-2"
-        style={{
-          whiteSpace: "nowrap",
-          overflow: "hidden",
-          textOverflow: "ellipsis",
-        }}
-      >
-        {shortComment}
+    <div className="h-[240px] w-[277px] bg-[#FFF9F94D] rounded-[20px] p-4 flex flex-col items-center justify-between">
+      <div className="flex items-center gap-1 mb-4 mt-4">
+        {renderStars(rating)}
       </div>
-      <div className="text-xs mt-2 font-medium">{author}</div>
+      <div className="text-[11px] leading-[13.41px] font-light text-center line-clamp-4">
+        {comment}
+      </div>
+      <div className="text-[11px] leading-[13.41px] font-medium text-center mt-auto">
+        {author}
+      </div>
     </div>
   );
 };
