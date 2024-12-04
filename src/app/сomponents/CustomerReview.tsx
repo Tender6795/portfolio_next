@@ -9,8 +9,8 @@ export type CustomerReviewProps = {
 
 const CustomerReview = ({
   rating = 5,
-  comment = "This is a sample comment. It might be long but will be truncated. This is a sample comment. It might be long but will be truncated.This is a sample comment. It might be long but will be truncated. This is a sample comment. It might be long but will be truncated.",
-  author = "John Doe",
+  comment = "",
+  author = "",
 }: CustomerReviewProps) => {
   const renderStars = (rating: number) => {
     const stars = [];

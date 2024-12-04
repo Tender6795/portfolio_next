@@ -10,32 +10,54 @@ export type worksType = {
 export const data: Array<worksType> = [
   {
     review: {
-      rating: 4.5,
-      comment: "Great experience! The project was delivered on time and exceeded expectations.",
-      author: "Alice Johnson",
+      rating: 5,
+      comment:
+        "He did an excellent job and will definitely reach out to him again for future projects.",
+      author: "",
     },
-    desc: "A detailed review about a completed web development project.",
-    title: "Web Development Project",
-    srcImage: "/avatar.png",
+    desc: "Website for communication 18+",
+    title: "Call Jane Doe",
+    srcImage: "/projects/calljanedoe.png",
   },
   {
     review: {
-      rating: 4,
-      comment: "The service was decent, but there were some delays in communication.",
-      author: "Michael Smith",
+      rating: 4.85,
+      comment: "Quality of work was great, in terms of coding approach.",
+      author: "",
     },
-    desc: "Feedback on a design collaboration.",
-    title: "Design Collaboration",
-    srcImage: "/avatar.png",
+    desc: "Educational platform",
+    title: "Weshare",
+    srcImage: "/projects/weshare.png",
   },
   {
     review: {
       rating: 5,
-      comment: "Absolutely fantastic! Would highly recommend their services.",
-      author: "Emily Davis",
+      comment: "",
+      author: "",
     },
-    desc: "Testimonial for an app development project.",
-    title: "App Development Testimonial",
-    srcImage: "/avatar.png",
+    desc: "Educational platform",
+    title: "EduTech",
+    srcImage: "/projects/edutech.png",
+  },
+  {
+    review: {
+      rating: 5,
+      comment: "Illia's an excellent FS Developer, highly recommended",
+      author: "",
+    },
+    desc: "Generator of pictures and postcards according to the client's description",
+    title: "Deflamel",
+    srcImage: "/projects/deflamel.png",
+  },
+
+  {
+    review: {
+      rating: 5,
+      comment: "I can describe Ilya as a good and responsible employee. For all the questions and comments we had, he contacted us and corrected everything. Thanks",
+      author: "",
+    },
+    desc: "Made a wrapper for the API on Java script for working with cryptocurrency",
+    title: "API Cryptopay",
+    srcImage: "/projects/noImage.jpg",
   },
 ];
