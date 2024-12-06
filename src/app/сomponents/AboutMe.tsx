@@ -28,15 +28,16 @@ export const AboutMe = () => {
         </h1>
         <div className="w-[600px]">
           <span className="font-normal text-[14px] leading-[17px] block">
-            I&apos;m a web developer with solid experience in Full-Stack
-            development 🚀 I can provide you the best suitable solutions for
-            your requirements. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. 
+            I&apos;m a web developer with over 5 years of expertise in
+            Full-Stack development, specializing in the MERN stack (MongoDB,
+            Express, ReactJS, and NodeJS). Throughout my career, I have created
+            numerous robust web apps, focusing on clean, reusable code and best
+            practices..
           </span>
           <span className="font-normal text-[14px] leading-[17px] mt-[30px] block">
-            Morbi gravida nibh in luctus dictum. Quisque vitae lectus non neque
-            condimentum volutpat non a tortor. Quisque nec lorem dignissim,
-            finibus eros id.
+            I’ve developed solutions that drive business success and can
+            recommend platforms, languages, and features to elevate your
+            project. Let’s make it even better - feel free to reach out!
           </span>
           <div className="flex gap-[20px] mt-[60px]">
             <Button text="Get in touch" onClick={getTouchHandle} />
