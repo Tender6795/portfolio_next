@@ -23,7 +23,7 @@ export const Skills = () => {
 
   return (
     <div className="w-full flex justify-end items-center mt-[130px]">
-      <div className="w-[1230px] flex justify-between">
+      <div className="w-full flex justify-between">
         <div className="w-[926px] flex flex-col items-start">
           <h1 className="font-semibold text-[64px] leading-[78px] mb-[40px]">
             Skill-Set

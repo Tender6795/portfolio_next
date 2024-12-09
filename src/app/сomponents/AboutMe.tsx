@@ -19,27 +19,29 @@ export const AboutMe = () => {
   };
 
   return (
-    <div className="flex flex-col-reverse lg:flex-row items-center lg:justify-end gap-6 lg:gap-0">
-      <div className="lg:w-[54.44%] lg:h-[16.88rem] lg:mr-[-12.08%] text-center lg:text-left">
+    <div className="w-full flex flex-row justify-between items-center gap-6">
+      <div className="flex-1 text-left">
         <h1 className="font-semibold text-responsive-h1 leading-responsive-h1">
           {`Hello, I’m Illia, `}
           <br />
-          {`a Full-Stack Developer`}
+          <span className="whitespace-nowrap inline-block relative z-10">
+            {`a Full-Stack Developer`}
+          </span>
         </h1>
-        <div className="w-full lg:w-[80%] mx-auto lg:mx-0">
-          <p className="font-normal text-responsive-p leading-responsive-p block">
+        <div>
+          <p className="font-normal text-responsive-p leading-responsive-p">
             I&apos;m a web developer with over 5 years of expertise in
             Full-Stack development, specializing in the MERN stack (MongoDB,
             Express, ReactJS, and NodeJS). Throughout my career, I have created
             numerous robust web apps, focusing on clean, reusable code and best
             practices.
           </p>
-          <p className="font-normal text-responsive-p leading-responsive-p mt-[2rem] block">
+          <p className="font-normal text-responsive-p leading-responsive-p mt-[2rem]">
             I’ve developed solutions that drive business success and can
             recommend platforms, languages, and features to elevate your
             project. Let’s make it even better - feel free to reach out!
           </p>
-          <div className="flex flex-col sm:flex-row gap-[1.25rem] mt-[4rem]">
+          <div className="flex flex-row gap-[1.25rem] mt-[4rem]">
             <Button text="Get in touch" onClick={getTouchHandle} />
             <Button
               text="Download CV"
