@@ -11,7 +11,7 @@ export const Footer = () => {
   };
 
   return (
-    <div className="w-[924px] h-[106px] bg-[#03A473] rounded-[20px] mx-auto mt-[137px] mb-[90px] flex items-center px-[60px] justify-between">
+    <div className="w-[88.75%] h-[106px] bg-[#03A473] rounded-[20px]  mt-[137px] mb-[90px] flex items-center px-[60px] justify-between mr-[210px]">
       <p className="font-montserrat text-[40px] font-semibold leading-[48.76px] text-left">
         Let’s work together! Hire me!
       </p>

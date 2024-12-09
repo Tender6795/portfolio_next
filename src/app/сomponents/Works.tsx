@@ -7,7 +7,7 @@ export const Works = () => {
   
   return (
     <div className="w-full flex justify-end items-center mt-[74px]">
-      <div className="w-[1230px] flex flex-col items-start relative">
+      <div className="w-full flex flex-col items-start relative">
         <h1 className="font-semibold text-[64px] leading-[78px] mb-[40px]">
           Works-Set
         </h1>
