@@ -37,9 +37,9 @@ export const AboutMe = () => {
             practices.
           </p>
           <p className="font-normal text-responsive-p leading-responsive-p mt-[2rem]">
-            I’ve developed solutions that drive business success and can
+            I&apos;ve developed solutions that drive business success and can
             recommend platforms, languages, and features to elevate your
-            project. Let’s make it even better - feel free to reach out!
+            project. Let&apos;s make it even better - feel free to reach out!
           </p>
           <div className="flex flex-row gap-[1.25rem] mt-[4rem]">
             <Button text="Get in touch" onClick={getTouchHandle} />

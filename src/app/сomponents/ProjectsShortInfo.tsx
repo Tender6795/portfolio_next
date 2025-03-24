@@ -7,26 +7,27 @@ export const ProjectsShortInfo = () => {
       <div className="flex-1 flex items-center justify-start pl-[20px]">
         <div className="flex flex-row items-center mr-[20px]">
           <div className="text-[57.6px] font-[600] leading-[70.22px] text-left font-montserrat mr-[10px]">
-            42
+            10+
           </div>
           <div className="text-[21.6px] font-[600] leading-[23.4px] text-left font-montserrat mr-[20px]">
-            Some text
+            successful  
             <br />
-            More text
+            projects
           </div>
         </div>
       </div>
 
       <Devider />
+
       <div className="flex-1 flex items-center justify-start pl-[20px]">
         <div className="flex flex-row items-center mr-[20px]">
           <div className="text-[57.6px] font-[600] leading-[70.22px] text-left font-montserrat mr-[10px]">
-            56
+            1000+
           </div>
           <div className="text-[21.6px] font-[600] leading-[23.4px] text-left font-montserrat mr-[20px]">
-            Another text
+            hours  
             <br />
-            For the
+            of work
           </div>
         </div>
       </div>
@@ -36,12 +37,12 @@ export const ProjectsShortInfo = () => {
       <div className="flex-1 flex items-center justify-start pl-[20px]">
         <div className="flex flex-row items-center">
           <div className="text-[57.6px] font-[600] leading-[70.22px] text-left font-montserrat mr-[10px]">
-            78
+            $300K+
           </div>
           <div className="text-[21.6px] font-[600] leading-[23.4px] text-left font-montserrat">
-            Third column
+            earned  
             <br />
-            More content
+            by clients
           </div>
         </div>
       </div>
