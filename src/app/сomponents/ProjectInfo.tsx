@@ -33,7 +33,7 @@ export const ProjectInfo = () => {
           />
         </div>
 
-        <div className="h-[367px] w-[277px] flex flex-col justify-between ml-auto">
+        <div className={`h-[367px] w-[277px] flex flex-col justify-between ml-auto`}>
           <div className="h-[185px] w-[277px] flex flex-col justify-center items-start">
             <h2 className="font-montserrat font-bold text-[16px] leading-[19.5px] mb-2">
               {data[currentIndex].title}
