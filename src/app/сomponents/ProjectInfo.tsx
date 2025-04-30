@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion"; 
 import CustomerReview from "./CustomerReview";
 import { data } from "../data";
+import { useIsDesktop } from "../hooks/useIsDesktop";
 
 export const ProjectInfo = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,11 +12,12 @@ export const ProjectInfo = () => {
   const handleDotClick = (index: number) => {
     setCurrentIndex(index);
   };
+  const isDesktop = useIsDesktop(1500);
 
   return (
-    <div className="relative">
+    <div className="relative w-full">
       <motion.div
-        className="h-[460px] w-[905px] flex bg-transparent rounded-[20px] items-center"
+        className={`h-[460px] ${ isDesktop ? "w-[905px]" :"w-full"} flex bg-transparent rounded-[20px] items-center`}
         key={currentIndex}
         initial={{ opacity: 0, x: 50 }} 
         animate={{ opacity: 1, x: 0 }} 
