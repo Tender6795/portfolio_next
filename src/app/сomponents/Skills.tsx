@@ -3,6 +3,7 @@ import React from "react";
 import { Skill } from "../ui/Skill";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useIsDesktop } from "../hooks/useIsDesktop";
 
 export const Skills = () => {
   const skills = [
@@ -21,10 +22,16 @@ export const Skills = () => {
     "Express",
   ];
 
+  const isDesktop = useIsDesktop(1500);
+
   return (
     <div className="w-full flex justify-end items-center mt-[130px]">
       <div className="w-full flex justify-between items-start">
-        <div className="flex flex-col items-start w-full md:w-[calc(100%-304px)]">
+        <div
+          className={`flex flex-col items-start w-full ${
+            isDesktop ? "md:w-[calc(100%-304px)]" : ""
+          }`}
+        >
           <h1 className="font-semibold text-[64px] leading-[78px] mb-[40px]">
             Skill-Set
           </h1>
@@ -42,15 +49,17 @@ export const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="w-[304px] relative">
-          <Image
-            src="/paginator_2.svg"
-            alt="Paginator"
-            width={23}
-            height={209}
-            className="absolute top-[317px] right-[213px]"
-          />
-        </div>
+        {!!isDesktop && (
+          <div className="w-[304px] relative">
+            <Image
+              src="/paginator_2.svg"
+              alt="Paginator"
+              width={23}
+              height={209}
+              className="absolute top-[317px] right-[213px]"
+            />
+          </div>
+        )}
       </div>
     </div>
   );
