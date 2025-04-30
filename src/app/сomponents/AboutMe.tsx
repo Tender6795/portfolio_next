@@ -2,8 +2,11 @@
 import React from "react";
 import { Avatar } from "./Avatar";
 import { Button } from "../ui/Button";
+import { useIsDesktop } from "../hooks/useIsDesktop";
 
 export const AboutMe = () => {
+  const isDesktop = useIsDesktop(1500); 
+
   const getTouchHandle = () => {
     window.open(
       "https://www.upwork.com/freelancers/~010a21f1a8bbd4727d",
@@ -51,7 +54,7 @@ export const AboutMe = () => {
           </div>
         </div>
       </div>
-      <Avatar />
+      {isDesktop && <Avatar />}
     </div>
   );
 };
