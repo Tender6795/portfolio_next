@@ -5,12 +5,16 @@ export type CustomerReviewProps = {
   rating?: number;
   comment?: string;
   author?: string;
+  className?: string; 
+  style?: React.CSSProperties;
 };
 
 const CustomerReview = ({
   rating = 5,
   comment = "",
   author = "",
+  className = "",
+  style,
 }: CustomerReviewProps) => {
   const renderStars = (rating: number) => {
     const stars = [];
@@ -26,8 +30,11 @@ const CustomerReview = ({
     return stars;
   };
 
+  const baseClasses = "h-[240px] w-[277px] bg-[#FFF9F94D] rounded-[20px] p-4 flex flex-col items-center justify-between";
+  const combinedClasses = `${baseClasses} ${className}`.trim();
+
   return (
-    <div className="h-[240px] w-[277px] bg-[#FFF9F94D] rounded-[20px] p-4 flex flex-col items-center justify-between">
+    <div className={combinedClasses} style={style}>
       <div className="flex items-center gap-1 mb-4 mt-4">
         {renderStars(rating)}
       </div>

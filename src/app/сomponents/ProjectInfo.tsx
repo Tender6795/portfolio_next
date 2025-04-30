@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import CustomerReview from "./CustomerReview";
 import { data } from "../data";
 import { useIsDesktop } from "../hooks/useIsDesktop";
@@ -17,37 +17,47 @@ export const ProjectInfo = () => {
   return (
     <div className="relative w-full">
       <motion.div
-        className={`h-[460px] ${ isDesktop ? "w-[905px]" :"w-full"} flex bg-transparent rounded-[20px] items-center`}
+        className={`h-auto ${
+          isDesktop ? "w-[905px]" : "w-full flex-col"
+        } flex bg-transparent rounded-[20px] items-start md:items-center`}
         key={currentIndex}
-        initial={{ opacity: 0, x: 50 }} 
-        animate={{ opacity: 1, x: 0 }} 
-        transition={{ duration: 0.7 }} 
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.7 }}
       >
-        <div className="h-[417px] w-[588px] rounded-[20px] border-[3px] border-[#03A473] bg-[#03A4734D] flex items-center justify-center overflow-hidden">
+        <div
+          className={`rounded-[20px] border-[3px] border-[#03A473] bg-[#03A4734D] overflow-hidden ${
+            isDesktop ? "w-[588px] h-[417px] mr-auto" : "w-full h-auto mb-4"
+          }`}
+        >
           <Image
             src={data[currentIndex].srcImage}
             alt="project"
-            height={375}
             width={545}
-            className="rounded-[20px] object-cover w-[545px] h-[375px]"
+            height={375}
+            className="rounded-[20px] object-cover w-full h-full"
           />
         </div>
 
-        <div className={`h-[367px] w-[277px] flex flex-col justify-between ml-auto`}>
-          <div className="h-[185px] w-[277px] flex flex-col justify-center items-start">
-            <h2 className="font-montserrat font-bold text-[16px] leading-[19.5px] mb-2">
+        <div
+          className={`flex flex-col justify-between ${
+            isDesktop ? "w-[277px] ml-auto" : "w-full"
+          }`}
+        >
+          <div className="flex flex-col justify-center items-start w-full">
+            <h2 className="font-montserrat font-bold text-[16px] leading-[19.5px] mb-2 w-full">
               {data[currentIndex].title}
             </h2>
-            <p className="font-montserrat font-bold text-[12px] leading-[14.63px] text-[#64748B]">
+            <p className="font-montserrat font-bold text-[12px] leading-[14.63px] text-[#64748B] w-full">
               {data[currentIndex].desc}
             </p>
           </div>
 
-          <CustomerReview {...data[currentIndex].review} />
+          <CustomerReview {...data[currentIndex].review} className="w-full" />
         </div>
       </motion.div>
 
-      <div className="mt-4 flex gap-[18px]">
+      <div className="mt-4 flex gap-[18px] justify-center md:justify-start">
         {data.map((_, index) => (
           <motion.div
             key={index}
@@ -55,10 +65,10 @@ export const ProjectInfo = () => {
             className={`w-[10.7px] h-[10.7px] rounded-full cursor-pointer`}
             initial={{ scale: 1 }}
             animate={{
-              scale: currentIndex === index ? 1.3 : 1, 
+              scale: currentIndex === index ? 1.3 : 1,
               backgroundColor: currentIndex === index ? "#03A473" : "#FFFFFF",
             }}
-            transition={{ duration: 0.3 }} 
+            transition={{ duration: 0.3 }}
           />
         ))}
       </div>
